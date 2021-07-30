@@ -100,8 +100,11 @@ That follows the best Go lint practices and test the build on every code changes
 
 ## ⚙️ Config
 
+You can specify optional environment variables to change default server variables:
+
 - `PORT` The web endpoint listening port (default: `8080`)
 - `HOST` The web endpoint listening address (default: `0.0.0.0`)
+- `REDIS_URL` The redis URL to connect to (default: inmemory redis instance)
 
 ## Credits
 
