@@ -7,11 +7,12 @@ import (
 	"net/http"
 )
 
+// MetricsRedisKey : the Redis Sorted Set key to save the requests metrics.
 const MetricsRedisKey = "metrics"
 
 /*
 	This endpoint calls the FizzBuzz function, store metrics about the request and send the result to the client.
- */
+*/
 func fizzBuzz(c echo.Context) error {
 	// URL parameters.
 	var (
