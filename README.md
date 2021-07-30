@@ -72,6 +72,13 @@ $ curl "http://127.0.0.1:8080/metrics"
 ]
 ```
 
+## 🤖 CI
+
+A CI is running on every push thanks to [Github Actions](https://github.com/features/actions).
+This CI contains a [lint](.github/workflows/lint.yml) and a [build](.github/workflows/build.yml) workflows.
+
+That follows the best Go lint practices and test the build on every code changes.
+
 ## ⚙️ Config
 
 - `PORT` The web endpoint listening port (default: `8080`)
